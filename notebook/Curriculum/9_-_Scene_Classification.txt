@@ -1,0 +1,27 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-02-07T20:20:56+01:00
+
+====== 9 - Scene Classification ======
+
+===== Describe the problem if image classification and why (and how) it is modeled as a Multiple-Instance Learning (MIL) problem. =====
+
+===== Explain the categorization of MIL methods in instance-level and bag-level methods. =====
+
+===== Describe the standard assumption of instance-level MIL methods related to the distribution of image descriptors from different classes. =====
+
+===== Describe how the instance-level MIL methods apply image classification. =====
+
+===== Describe how bag-level MIL methods combine information from instances for image classification. =====
+
+===== Describe the various distance/kernel functions used in MIL methods to exploit information from all instances. =====
+
+===== Describe how embedding space classification works =====
+
+===== What types of embedding are used in embedding-based classification? =====
+
+===== Describe the Bag of Words (or Bag of Features) model =====
+
+===== What is the difference between Bag of Words model and Discriminant Bag of Words models? =====
+
+===== Describe a Discriminant Bag of Words (Features) model. =====

@@ -1,51 +1,32 @@
-clear all
-close all
-[orig] = imread('cameraman.tif');
-I = 10*randn(size(orig)) + double(orig);
-I1 = [orig I];
-figure(1)
-imshow(I1)
-f3 = create_filter(3);
-f5 = create_filter(5);
-f7 = create_filter(7);
+clear all;  close all;
 
-for i = 1:4
-    fI3(:,:,i) = ???
-end
-for i = 1:4
-    fI5(:,:,i) = ???
-end
-for i = 1:4
-    fI7(:,:,i) = ???
-end
-figure, title('With Kernel size 3')
+Miranda_org=imread('miranda.tif');
+Miranda_org = imresize(Miranda_org, [400 400]);
+imwrite(Miranda_org, 'miranda1.tif');
 
-for i = 1:4
-    subplot(2,2,i), imshow(fI3(:,:,i),[]);
+% create a copy of the image with superimposed slat noise
+Miranda_scratch = Miranda_org;
+for i= 150:250
+	for j=150:250
+		if rand>0.9 Miranda_scratch(i,j)=255; end
+    end
 end
-figure, title('With Kernel size 5')
 
-for i = 1:4
-    subplot(2,2,i), imshow(fI5(:,:,i),[]);
-end
-figure, title('With Kernel size 7')
+% apply the thresholded median filter (use a varying threshold value)
+Miranda_rec=medfilt_th(Miranda_scratch,5,20);
 
-for i = 1:4
-    subplot(2,2,i), imshow(fI7(:,:,i),[]);
+% apply median filtering
+Miranda_med = Miranda_scratch;
+for i= 150:250
+	for j=150:250
+		Miranda_med(i,j) = median(median(double(Miranda_med((i-2):(i+2), (j-2):(j+2)))));
+    end
 end
-%%
-bestfI3 = zeros(size(orig,1));
-bestfI5 = zeros(size(orig,1));
-bestfI7 = zeros(size(orig,1));
-for i = 1:4
-    bestfI3 = bestfI3  + fI3(:,:,i);
-    bestfI5 = bestfI5  + fI5(:,:,i);
-    bestfI7 = bestfI7  + fI7(:,:,i);
-end
-%bestfI3 = sum(fI3,3);
 
-figure, 
-subplot(2,2,1), imshow(I,[]); title('Noisy image.')
-subplot(2,2,2), imshow(bestfI3,[]); title('Restored image with kernel = 3.')
-subplot(2,2,3), imshow(bestfI5,[]);title('Restored image with kernel = 5.')
-subplot(2,2,4), imshow(bestfI7,[]);title('Restored image with kernel = 7.')
+
+figure;
+subplot( 2,2,1 );   imshow(Miranda_org);     title('Original image')
+subplot( 2,2,2 );   imshow(Miranda_scratch); title('Scratched image')
+subplot( 2,2,3 );   imshow(Miranda_rec);     title('Denoised image by median threshold filter')
+subplot( 2,2,4 );   imshow(Miranda_med);     title('Denoised image by median filter')
+disp(num2str(min(min(double(Miranda_scratch==Miranda_rec)))));

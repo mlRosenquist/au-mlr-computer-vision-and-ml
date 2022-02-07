@@ -1,0 +1,48 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-02-07T20:19:51+01:00
+
+====== 3 - Stereo and epipolar geometry ======
+Created Monday 07 February 2022
+
+===== Explain the term disparity, for instance using the parallel two-camera setup. =====
+
+===== Know what is meant by triangulation. =====
+
+===== Explain the epipolar geometry for two camera views (e.g., epipoles, epipolar lines, epipolar plane). =====
+
+===== Describe the epipolar constraint for calibrated and uncalibrated cameras, respectively (i.e., essential matrix versus fundamental matrix). =====
+
+===== Motivate the use of stereo image rectification. =====
+
+===== Describe the process followed in triangulation. How many points are needed in order to calculate the real-world coordinates (X)? =====
+
+===== Explain how to compute the fundamental matrix (i.e., stereo pipeline with weak calibration). =====
+
+===== Structure from motion (SFM) =====
+
+==== Define the SFM problem. ====
+
+==== Explain what happens to the reconstruction if there are no constraints on the camera matrix or on the scene. ====
+
+==== Describe how to solve the SFM problem with ====
+
+===== Photometric stereo =====
+
+==== Explain the basic idea underlying photometric stereo (or “shape from light”). ====
+
+==== Describe the basic principle of “depth from normals”. ====
+
+===== Shading =====
+
+==== Describe the basics of light transport ====
+
+==== Illumination -> reflectance -> perception ====
+
+==== Light sources ====
+
+==== Types of reflection ====
+
+==== Describe how shape from shading works ====
+
+==== Mention strategies for estimating light source directions. ====

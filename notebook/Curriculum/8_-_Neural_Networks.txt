@@ -1,0 +1,41 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-02-07T20:20:47+01:00
+
+====== 8 - Neural Networks ======
+
+===== Describe the building blocks of a feedforward neural network. =====
+
+===== Describe what is a Single-hidden Layer Feedforward Neural network (model’s parameters and how the output is calculated). =====
+
+===== Describe the importance of the activation function for neural networks. =====
+
+===== Describe in words how the network’s parameters are optimized (use the means square error criterion for the description) =====
+
+===== Describe how the selection of the learning rate value can affect the optimization process of a network. =====
+
+===== What is forward pass and what is backward pass in the Backpropagation algorithm? What signals are used in each of them and what functions? =====
+
+===== Describe various data pre-processing steps used in training neural networks and why there is a need to pre-process the data. =====
+
+===== What is learning with momentum? =====
+
+===== What is learning with adaptive learning rate? =====
+
+===== What is DropOut? =====
+
+===== Describe what is the softmax function and how it is used in neural networks. =====
+
+===== Describe what is the cross-entropy loss function. =====
+
+===== Describe the building blocks of a Convolutional Neural Network. =====
+
+===== Describe the parameters of a CNN =====
+
+===== What is a convolutional neuron and what are its differences from a standard neuron? =====
+
+===== Describe the training protocols =====
+
+==== Train-validation-test split ====
+
+==== Cross-validation and its variants ====

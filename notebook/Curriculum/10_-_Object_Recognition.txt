@@ -1,0 +1,32 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-02-07T20:21:04+01:00
+
+====== 10 - Object Recognition ======
+
+===== o Object detection =====
+
+==== ▪ Know the difference between object detection and object identification ====
+
+==== ▪ Describe the basic scheme used in object detection (such as face detection) ====
+
+==== ▪ Describe the basic principle used when training a classifier for image classification (i.e. use both positive and negative examples) ====
+
+==== ▪ Describe different types of features used for object detection (Viola-Jones, Histogram of Oriented Gradients, Local Binary Patterns) ====
+
+==== ▪ Explain the basic principle of part-based models. ====
+
+o Active appearance models (can be used for object identification)
+▪ Mention applications of active appearance models
+▪ Explain what is meant by a shape model and a texture model, respectively
+▪ Describe the manual work involved in building/training an active appearance model.
+▪ Explain why we need to apply translation, rotation and scale correction (-Procrustes
+alignment) before applying PCA
+o Neural network-based object recognition
+▪ Describe a network architecture used for image classification
+▪ Describe the concept of receptive field of a convolutional filter of two different layers
+▪ What shapes do the convolutional filters take?
+▪ Describe the concept of Object Proposals methods
+▪ Describe the two approaches followed for object recognition/localization in images using
+CNNs (Region-based CNN and YOLO)
+

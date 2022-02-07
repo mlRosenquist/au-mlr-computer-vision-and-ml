@@ -27,13 +27,13 @@ images{1} = I_gaus; images{2} = I_salt; images{3} = I_ray;
 for i=1:3
     g=images{i};
     % Arithmetic Mean
-    f1 = ???
+    f1 = imfilter(g, fspecial('average', [m n]));
  
     % Geometric Mean
-    f2 = ???
+    f2 = exp(imfilter(log(g), ones(m, n), 'replicate')) .^ (1/(m*n));
  
     % Harmonic Mean
-    f3 = ???
+    f3 = (m*n) ./ imfilter(1 ./ (g + eps), ones(m, n), 'replicate');
  
     figure; colormap('gray');
     subplot(2,2,1);imagesc(g);  title('Original');

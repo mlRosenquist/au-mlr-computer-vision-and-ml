@@ -1,0 +1,40 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-02-07T20:20:15+01:00
+
+====== 5 - Segmentation ======
+Created Monday 07 February 2022
+
+===== Motive the use of clustering for image segmentation. =====
+
+===== Mention typical image features used for clustering. =====
+
+===== Explain the difference between divisive clustering and agglomerative clustering. =====
+
+===== Describe the K-means algorithm. =====
+
+===== Explain how the Mean Shift algorithm works. =====
+
+===== For graph-based segmentation you should know the following: =====
+
+==== An image can be represented as a graph, where the pixels are the nodes and edges connect pixels. ====
+
+==== Typically, only neighboring pixels are connected. ====
+
+==== In our context, graphs can be thought of as “roadmaps”, where the nodes represent cities and the edges represent roads between cities. Each edge is associated with a certain cost, which in the roadmap example could be the distance (in km) between two connected cities. ====
+
+==== Normalized cuts: For a given path from A to B (i.e., a connected series of edges leading from node A to node B), we may encounter some “obstacle” that makes the total cost go very high. This is the basic idea underlying the normalized cut segmentation algorithm; the obstacles could be edges in the image. In this case, the normalized cut algorithm would group together pixels that are similar in appearance (e.g., color) and surrounded by an edge. ====
+
+==== Shortest path: We may also define the cost of the edges such that the cost of the edge connecting two neighboring pixels is low if both pixels lie on an edge (and high otherwise). If both A and B lie on the same edge, we can then find the edge connecting A and B by finding the shortest path (using Dijsktra’s algorithm) from A to B. This is the basic idea underlying “intelligent scissors” or “livewire”. ====
+
+===== Motivate the use of snakes and level sets for image segmentation. =====
+
+===== Explain the basic concept of snakes, including physical interpretation of the energy terms. =====
+
+===== Given an initial contour, describe in words how the final contour (snake) is obtained. =====
+
+===== Describe the Gradient Vector Flow (GVF) field and illustrate the advantages of this field over the traditional external force field. =====
+
+===== Describe the main differences between snakes and level sets, including the contour representation used in the two methods. =====
+
+===== Describe how the level set is moved in each iteration (i.e., equation of motion). =====

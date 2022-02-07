@@ -1,0 +1,7 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-02-07T20:21:23+01:00
+
+====== 12 - Salient Object Detection ======
+Created Monday 07 February 2022
+

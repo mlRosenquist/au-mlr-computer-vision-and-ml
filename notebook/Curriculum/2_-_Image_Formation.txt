@@ -1,0 +1,39 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-02-07T20:19:38+01:00
+
+====== 2 - Image Formation ======
+Created Monday 07 February 2022
+
+===== Cameras =====
+
+==== Describe the geometry of the camera model/pinhole camera (e.g., center of projection, projection plane, principal point, focal length, etc.). ====
+
+==== Explain the role of the calibration matrix (K) and the camera intrinsics. ====
+
+
+==== Explain the role of the camera matrix (P) and the camera extrinsics. ====
+
+==== Mention at least one strategy for camera calibration. ====
+
+===== Projective geometry =====
+
+==== Explain the geometry under perspective viewing (e.g., view point, rays, vanishing points, and horizon). ====
+
+==== Mention examples of properties that remain – and do not remain – invariant under perspective viewing. ====
+
+==== Explain and motivate the use of homogenous coordinates in projective geometry. ====
+
+==== Define what is meant by a homography (=projective transformation), and know that it is only defined up to a scale. ====
+
+==== Explain the basic steps involved in solving for an unknown homography using point correspondences. ====
+
+==== Explain the basic steps in image rectification. ====
+
+==== Argue that panoramic views can be generated using homographies ====
+
+=== • when the camera centers are fixed (always!) ===
+
+=== • when the camera centers change AND the imaged world object is planar. ===
+
+==== Explain how to constrain feature matching using a global motion model (e.g., a homography) and RANSAC ====

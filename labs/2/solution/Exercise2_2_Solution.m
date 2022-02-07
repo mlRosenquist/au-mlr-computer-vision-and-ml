@@ -1,10 +1,10 @@
 clear all; close all;
 
-VLFEATROOT = 'C:\Program Files\MATLAB\R2020b\toolbox\vlfeat-0.9.20';
-VLFEATROOT = 'vlfeat-0.9.20';
+%VLFEATROOT = 'C:\Program Files\MATLAB\R2020b\toolbox\vlfeat-0.9.20';
+VLFEATROOT = '/home/mlrosenquist/MATLAB Add-Ons/computer-vision-and-ml/vlfeat-0.9.21-bin/vlfeat-0.9.21';
 
 addpath('C:\Program Files\MATLAB\R2020b\toolbox');
-run('C:\Program Files\MATLAB\R2020b\toolbox\vlfeat-0.9.20\toolbox\vl_setup.m');
+run([VLFEATROOT,'/toolbox/vl_setup.m']);
 
 % Load image and convert to grayscale
 I = imread('RSA.jpg');

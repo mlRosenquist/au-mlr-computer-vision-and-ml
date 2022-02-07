@@ -1,9 +1,9 @@
 clear all; close all;
 
-VLFEATROOT = 'vlfeat-0.9.20';
+VLFEATROOT = '/home/mlrosenquist/MATLAB Add-Ons/computer-vision-and-ml/vlfeat-0.9.21-bin/vlfeat-0.9.21';
 
-addpath('MatlabSourceFiles');
-run([VLFEATROOT,'\toolbox\vl_setup.m']);
+%addpath('MatlabSourceFiles');
+run([VLFEATROOT,'/toolbox/vl_setup.m']);
 
 % Load image
 I = imread('RSA.jpg');

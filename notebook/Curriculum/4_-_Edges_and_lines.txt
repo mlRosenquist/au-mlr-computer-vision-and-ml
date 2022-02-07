@@ -1,0 +1,24 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-02-07T20:20:01+01:00
+
+====== 4 - Edges and lines ======
+Created Monday 07 February 2022
+
+===== Explain how to detect edges using a gradient operator. =====
+
+===== Describe how to detect edges using the Laplacian of Gaussian (LoG) operator. =====
+
+===== Motivate the importance of prefiltering the image before gradient-based edge detection. =====
+
+===== Explain how the Canny operator works with emphasis on non-maximum suppression and hysteresis. =====
+
+===== Explain how to generate a texton map. =====
+
+===== Explain how to detect edges between two textures using a half-disc detector. =====
+
+===== List different strategies for linking edges (for example successive approximation of lines/curves) and edge thinning. =====
+
+===== Describe how supervised edge detectors work. =====
+
+===== Describe how Hough Transform works and on what problems it can be applied to =====

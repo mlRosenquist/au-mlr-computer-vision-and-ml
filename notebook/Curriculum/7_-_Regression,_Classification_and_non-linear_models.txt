@@ -1,0 +1,40 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-02-07T20:20:38+01:00
+
+====== 7 - Regression, Classification and non-linear models ======
+
+
+===== Describe the Linear Regression model (model’s parameters, and how they are optimized). =====
+
+===== Describe the Ridge Regression model (difference from linear regression, model’s parameters, how they are optimized). =====
+
+===== What is LASSO? Connection and differences from the above models. =====
+
+===== Principal Components Regression =====
+
+===== Describe how can a regression model be used for classification. =====
+
+===== Describe the Logistic Regression model (model’s parameters, and how they are optimized); Describe why it is a probability-like model. =====
+
+===== Describe the two ways that can be used to extend linear models to non-linear ones =====
+
+==== Use of explicit nonlinear mappings ====
+
+==== Use of implicit nonlinear mappings (kernels) ====
+
+===== Describe RBF networks and its randomized counterparts. =====
+
+===== Describe the Support Vector Machine classifier. =====
+
+===== Describe what is a kernel function and what are the properties that a matrix needs to satisfy in order to be a kernel matrix. =====
+
+===== Describe Kernel Discriminant Analysis as an extension of Linear Discriminant Analysis (using the Representer Theorem W = ΦA and the definition of the kernel matrix K = ΦΤΦ) =====
+
+===== Describe how we can calculate the Eulidean distance between two vectors and how this can be used to extend k-Means to its kernel-based version. =====
+
+===== Describe Kernel-based Regression. =====
+
+===== What is the Nonlinear Projection Trick? =====
+
+===== What is Nyström Approximation? In which cases do we use it? =====

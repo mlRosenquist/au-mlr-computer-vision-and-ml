@@ -1,0 +1,56 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-02-07T20:16:21+01:00
+
+====== 1 - Image Pyramids (scale-space) ======
+
+===== Mention typical applications of feature detection, description, and matching. =====
+
+===== Explain what an “interest point” is, and what such points can be used for. =====
+
+===== Feature detection =====
+
+==== Explain how the Harris corner detector works (at least for an axis-aligned corner…). ====
+
+==== Explain how the blob detector works (i.e., the feature detection strategy used in SIFT). ====
+
+===== Motivate the importance of “scale invariance” and “rotational invariance”. =====
+
+
+===== Describe strategies for obtaining scale invariance and rotational invariance (e.g., automatic scale selection). =====
+
+
+===== Describe different strategies for “feature description” (e.g., image patches and the SIFT descriptor). =====
+
+
+===== Describe the basic principle of “feature matching”. =====
+
+
+===== Mention typical applications of image pyramids. =====
+
+
+===== Explain the steps involved in constructing a Gaussian pyramid. =====
+
+
+===== Explain the link between image scale and the standard deviation of the Gaussian filter. =====
+
+
+===== Explain how to construct a difference of Gaussian (DoG) pyramid. =====
+
+
+===== Argue that the difference of Gaussian (DoG) operator is a reasonable approximation to the Laplacian of Gaussian (LoG) operator. =====
+
+
+===== Describe the typical usage of DoG pyramids in feature detection (what type of feature are we typically looking for? How?). =====
+
+
+===== Relate scale space to =====
+
+==== feature detection, description, and matching ====
+
+
+==== template matching ====
+
+
+==== motion estimation ====
+

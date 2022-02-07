@@ -7,7 +7,7 @@ figure(1), imshow(I);
 level = 0:255;
 vI = double(I(:));
 for i=0:255
-    histI(i+1) = ???
+    histI(i+1) = length(find(vI==i));
 end
 histI = histI/sum(histI); %Normalize w/total pixels
 figure(2), plot(histI);
