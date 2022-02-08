@@ -5,52 +5,89 @@ Creation-Date: 2022-02-07T20:16:21+01:00
 ====== 1 - Image Pyramids (scale-space) ======
 
 ===== Mention typical applications of feature detection, description, and matching. =====
+{{./pasted_image.png}}
+* Image representation
+* Image classification and retrieval
+* Object recognition and matching
+* Scene reconstruction
+* Texture classification
+* Robot localization
+* Biometrics Systems
+
 
 ===== Explain what an “interest point” is, and what such points can be used for. =====
+An interest point in an image is a point that is different from its neighbourhood. 
+{{./pasted_image001.png}}
+This can be used to make panorama pictures for example. Where we have many images and can overlap them by using the interest points. 
 
 ===== Feature detection =====
-
+{{./pasted_image002.png}}
 ==== Explain how the Harris corner detector works (at least for an axis-aligned corner…). ====
+https://medium.com/data-breach/introduction-to-harris-corner-detector-32a88850b3f6
+{{./pasted_image003.png}}
+{{./pasted_image004.png}}
+{{./pasted_image005.png}}
+{{./pasted_image007.png}}
+{{./pasted_image006.png}}
+
 
 ==== Explain how the blob detector works (i.e., the feature detection strategy used in SIFT). ====
+https://towardsdatascience.com/sift-scale-invariant-feature-transform-c7233dc60f37
+{{./pasted_image008.png}}
+{{./pasted_image009.png}}
 
+{{./pasted_image010.png}}
+{{./pasted_image011.png}}
 ===== Motivate the importance of “scale invariance” and “rotational invariance”. =====
+Scale invariance means that features don't change if you change the size of image, orientation invariance means that features don't change if you rotate the targeted object. This means that filtering features of an object that are scale and rotation invariant, it' is more likely to identify it in a different image where the object not necessarily appears exactly in the same position and at the same absolute size (the size of whatever object depends on perspective). In real application however as pointed by other user "invariant" is only "approximately invariant" not "totally invariant".
 
+Motivation: 
+* If our corners are not x-aligned we will not detect them
+* Without scale invariance we might not be able to detect the interest points on an image with a different scale. 
 
 ===== Describe strategies for obtaining scale invariance and rotational invariance (e.g., automatic scale selection). =====
-
+{{./pasted_image012.png}}
+{{./pasted_image013.png}}
+{{./pasted_image014.png}}
 
 ===== Describe different strategies for “feature description” (e.g., image patches and the SIFT descriptor). =====
-
+{{./pasted_image015.png}}
+{{./pasted_image016.png}}
 
 ===== Describe the basic principle of “feature matching”. =====
-
+{{./pasted_image017.png}}
+{{./pasted_image018.png}}
+{{./pasted_image019.png}}
 
 ===== Mention typical applications of image pyramids. =====
-
+{{./pasted_image020.png}}
 
 ===== Explain the steps involved in constructing a Gaussian pyramid. =====
-
+{{./pasted_image021.png}}
 
 ===== Explain the link between image scale and the standard deviation of the Gaussian filter. =====
+{{./pasted_image023.png}}
 
 
 ===== Explain how to construct a difference of Gaussian (DoG) pyramid. =====
 
-
+{{./pasted_image025.png}}
+{{./pasted_image026.png}}
 ===== Argue that the difference of Gaussian (DoG) operator is a reasonable approximation to the Laplacian of Gaussian (LoG) operator. =====
 
-
+{{./pasted_image027.png}}
+{{./pasted_image028.png}}
 ===== Describe the typical usage of DoG pyramids in feature detection (what type of feature are we typically looking for? How?). =====
-
+{{./pasted_image029.png}}
 
 ===== Relate scale space to =====
 
 ==== feature detection, description, and matching ====
-
+https://medium.com/@vad710/cv-for-busy-devs-scale-space-9368e3be938b
+Understanding scale space is another one of those major building blocks in Computer Vision. Scale space allows for Scale Invariant feature detectors which allows us to find the same feature across images of the same objects at different scales.
 
 ==== template matching ====
-
+{{./pasted_image030.png}}
 
 ==== motion estimation ====
-
+The usual techniques for motion estimation are limited to the application of coarse to fine strategies. The coarse to fine strategies can be successful only if there is enough information in every scal
