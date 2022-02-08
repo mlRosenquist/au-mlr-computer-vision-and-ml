@@ -5,7 +5,7 @@ Creation-Date: 2022-02-07T20:16:21+01:00
 ====== 1 - Image Pyramids (scale-space) ======
 
 ===== Mention typical applications of feature detection, description, and matching. =====
-{{./pasted_image.png}}
+{{./pasted_image.png}}sz
 * Image representation
 * Image classification and retrieval
 * Object recognition and matching
