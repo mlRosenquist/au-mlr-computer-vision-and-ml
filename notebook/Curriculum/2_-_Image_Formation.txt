@@ -8,32 +8,50 @@ Created Monday 07 February 2022
 ===== Cameras =====
 
 ==== Describe the geometry of the camera model/pinhole camera (e.g., center of projection, projection plane, principal point, focal length, etc.). ====
-
+{{./pasted_image.png}}
+{{./pasted_image001.png}}
+{{./pasted_image002.png}}
+{{./pasted_image003.png}}
+{{./pasted_image004.png}}
 ==== Explain the role of the calibration matrix (K) and the camera intrinsics. ====
-
 
 ==== Explain the role of the camera matrix (P) and the camera extrinsics. ====
 
-==== Mention at least one strategy for camera calibration. ====
+{{./pasted_image005.png}}
+{{./pasted_image006.png}}
 
+
+
+==== Mention at least one strategy for camera calibration. ====
+{{./pasted_image007.png}}
 ===== Projective geometry =====
 
 ==== Explain the geometry under perspective viewing (e.g., view point, rays, vanishing points, and horizon). ====
-
-==== Mention examples of properties that remain – and do not remain – invariant under perspective viewing. ====
+{{./pasted_image008.png}}
+{{./pasted_image009.png}}
+{{./pasted_image010.png}}
+==== Mention examples of properties that remain – and do not remain – invariant under perspective viewing.??? ====
 
 ==== Explain and motivate the use of homogenous coordinates in projective geometry. ====
+{{./pasted_image015.png}}
 
 ==== Define what is meant by a homography (=projective transformation), and know that it is only defined up to a scale. ====
+{{./pasted_image014.png}}
 
 ==== Explain the basic steps involved in solving for an unknown homography using point correspondences. ====
-
+{{./pasted_image013.png}}
 ==== Explain the basic steps in image rectification. ====
-
+{{./pasted_image012.png}}
 ==== Argue that panoramic views can be generated using homographies ====
 
 === • when the camera centers are fixed (always!) ===
 
 === • when the camera centers change AND the imaged world object is planar. ===
 
+{{./pasted_image016.png}}
+{{./pasted_image017.png}}
+
+
 ==== Explain how to constrain feature matching using a global motion model (e.g., a homography) and RANSAC ====
+{{./pasted_image018.png}}
+{{./pasted_image019.png}}
