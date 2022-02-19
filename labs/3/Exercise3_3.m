@@ -36,20 +36,54 @@ text(points(:,1), points(:,2), labels, 'VerticalAlignment','bottom', ...
 % l1=[a,b,c] is the line between p1 and p2 satisfying the equation
 % ax+by+c=0
 % To plot a line, l1, use: plot(x,y(l1))
+l1 = cross(p1,p2)
+l2 = cross(p3,p4)
 
+% Plot the lines
+plot(x,y(l1),'b')
+plot(x,y(l2),'b')
 
 
 % Step 2: compute the first vanishing points, pv1, as the intersection
 % between the two lines, l1 and l2
 % To plot a point, p1, use: plot(p1(1),p1(2),'x')
 
+% Compute a vanishing point 
+pv1 = cross(l1,l2)
 
+% Divide by homogeneous coordinate
+pv1 = pv1./pv1(3)
+
+% Plot point
+plot(pv1(1),pv1(2),'yx')
 
 % Step 3: repete step 1 and 2 for points p5-p8
+l3 = cross(p5,p6)
+l4 = cross(p7,p8)
+pv2 = cross(l3,l4)
+pv2 = pv2./pv2(3)
 
+plot(x,y(l3),'r')
+plot(x,y(l4),'r')
+plot(pv2(1),pv2(2),'yx')
 
 
 % Step 4: compute and visualize the horizon
-
+lhorizon = cross(pv1,pv2);
+plot(x,y(lhorizon),'g')
 
 % Exercise: compute the height of the camera above the ground
+disp('Point out the top of the measured wall using a single mouse click')
+rect=getrect;pGroundTop=[rect(1);rect(2)];
+disp('Point out the bottom of the measured wall using a single mouse click')
+rect=getrect;pGroundBot=[rect(1);rect(2)];
+
+% Compute the height of the wall in pixels
+distWallPixels = pGroundBot(2)-pGroundTop(2);
+
+% Compute distance between ground point and horizon in pixels
+y = @(l,x) (-l(3)-l(1)*x)/l(2); % y-coordinates
+distHorizonPixels = abs(pGroundBot(2)-y(lhorizon,pGroundBot(1)));
+
+% Compute the camera height (=the height of the horizon above ground level)
+cameraHeight = distHorizonPixels/distWallPixels*3.2

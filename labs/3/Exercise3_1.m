@@ -23,7 +23,18 @@ square_homo = [ square;
 % Define a 3-by-3 transformation matrix (A) that rotates the square by 45
 % degrees (counter-clockwise) around its center point (xc,yc).
          
-A = ???
+theta = pi/4;
+T1 = [ 1 0 xc;
+       0 1 yc;
+       0 0 1];
+T2 = [ 1 0 -xc;
+       0 1 -yc;
+       0 0 1];
+R = [cos(theta) -sin(theta) 0;
+     sin(theta)  cos(theta) 0;
+         0           0      1];
+
+A = T1*R*T2;
 
 
 
@@ -35,33 +46,65 @@ plot(square_homo_rotated(1,:),square_homo_rotated(2,:),'r-')
 hold off
 legend('Square','Center of square','Square rotated 45 degrees','Location','SouthEast')
 
-%% Transformations in 3D
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Transformations in 3D
+xc = 4;
+yc = 4;
+zc = 3;
+cube = [ xc+1 xc+1 xc-1 xc-1 xc+1 xc+1 xc+1 xc-1 xc-1 xc+1 xc+1 xc+1 xc-1 xc-1 xc-1 xc-1;
+           yc+1 yc-1 yc-1 yc+1 yc+1 yc+1 yc-1 yc-1 yc+1 yc+1 yc-1 yc-1 yc-1 yc-1 yc+1 yc+1;
+           zc-1 zc-1 zc-1 zc-1 zc-1 zc+1 zc+1 zc+1 zc+1 zc+1 zc+1 zc-1 zc-1 zc+1 zc+1 zc-1];
+fig = figure()
+plot3(cube(1,:),cube(2,:),cube(3,:),'-',xc,yc,zc,'.')
+legend('Cube','Center of cube','Location','SouthEast')
+xlabel('X')
+ylabel('Y')
+zlabel('Z')
+axis equal
+axis([-2 6 -2 6 -2 6])
+grid on
 
-% xc = 4;
-% yc = 4;
-% zc = 3;
-% cube = [ xc+1 xc+1 xc-1 xc-1 xc+1 xc+1 xc+1 xc-1 xc-1 xc+1 xc+1 xc+1 xc-1 xc-1 xc-1 xc-1;
-%            yc+1 yc-1 yc-1 yc+1 yc+1 yc+1 yc-1 yc-1 yc+1 yc+1 yc-1 yc-1 yc-1 yc-1 yc+1 yc+1;
-%            zc-1 zc-1 zc-1 zc-1 zc-1 zc+1 zc+1 zc+1 zc+1 zc+1 zc+1 zc-1 zc-1 zc+1 zc+1 zc-1];
-% fig = figure()
-% plot3(cube(1,:),cube(2,:),cube(3,:),'-',xc,yc,zc,'.')
-% legend('Cube','Center of cube','Location','SouthEast')
-% xlabel('X')
-% ylabel('Y')
-% zlabel('Z')
-% axis equal
-% axis([-2 6 -2 6 -2 6])
-% grid on
-% 
-% % Convert cube to homogeneous coordinates
-% cube_homo = [ cube;
-%                 ones(1,size(cube,2)) ];
-%              
-% % A = ???
-% 
-% cube_homo_rotated = A*cube_homo;
-% figure(fig)
-% hold on
-% plot3(cube_homo_rotated(1,:),cube_homo_rotated(2,:),cube_homo_rotated(3,:),'r-')
-% hold off
-% legend('Cube','Center of cube','Cube rotated 45 degrees','Location','SouthEast')
+% Convert cube to homogeneous coordinates
+cube_homo = [ cube;
+                ones(1,size(cube,2)) ];
+             
+% A = ???
+
+% Define the translation matrices first
+T1 = [ 1 0 0 xc;
+       0 1 0 yc;
+       0 0 1 zc;
+       0 0 0 1];
+T2 = [ 1 0 0 -xc;
+       0 1 0 -yc;
+       0 0 1 -zc;
+       0 0 0 1];
+% z --> 70 degrees
+theta = (70/180)*pi;
+Rz = [cos(theta) -sin(theta) 0 0;
+      sin(theta)  cos(theta) 0 0;
+           0          0      1 0;
+           0          0      0 1];
+
+% y --> 45 degrees
+phi = pi / 4;
+Ry = [cos(phi) 0 sin(phi)  0;
+         0     1    0      0;
+     -sin(phi) 0 cos(phi)  0
+         0     0    0      1];
+
+% x --> 20 degrees
+psi = (20/180)*pi;
+Rx = [1    0         0      0;
+      0 cos(psi) -sin(psi)  0;
+      0 sin(psi)  cos(psi)  0;
+      0    0         0      1];
+
+A = (T1*Rz*T2) * (T1*Ry*T2) * (T1*Rx*T2);
+
+cube_homo_rotated = A*cube_homo;
+figure(fig)
+hold on
+plot3(cube_homo_rotated(1,:),cube_homo_rotated(2,:),cube_homo_rotated(3,:),'r-')
+hold off
+legend('Cube','Center of cube','Cube rotated 45 degrees','Location','SouthEast')

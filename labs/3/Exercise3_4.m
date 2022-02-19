@@ -1,11 +1,11 @@
 clear all; close all;
 
-VLFEATROOT = 'vlfeat-0.9.20';
+%VLFEATROOT = 'vlfeat-0.9.20';
 %run([VLFEATROOT '\toolbox\vl_setup.m']);
-addpath([VLFEATROOT,'\toolbox'])
+%addpath([VLFEATROOT,'\toolbox'])
 vl_setup()
 
-CALIBROOT = 'TOOLBOX_calib';
+CALIBROOT = '/home/mlrosenquist/MATLAB Add-Ons/computer-vision-and-ml/TOOLBOX_calib';
 addpath(CALIBROOT);
 MATLABFNSROOT = 'MatlabFns';
 addpath(genpath(MATLABFNSROOT))
@@ -164,16 +164,48 @@ for f=1:F
     % The toolbox uses the following convention:
     % P_camera=Rc*P_world+Tc
     
+    % Intrinsic camera matrix (also available directly as the variable 'KK'
+    % after the calibration procedure. More information on convention:
+    % http://www.vision.caltech.edu/bouguetj/calib_doc/htmls/parameters.html
+    K = [fc(1)  alpha_c*fc(1)   cc(1);
+        0       fc(2)           cc(2);
+        0       0               1   ];
     
-    % Exercise: Plot the axes as lines on top of the image
+    % Projection matrix
+    P = [1 0 0 0;
+        0 1 0 0;
+        0 0 1 0];
+    
+    % Rotation matrix (with homogeneous coordinates)
+    R = [Rc,zeros(3,1);
+        zeros(1,3) 1];
+    
+    % Translation matrix (with homogeneous coordinates)
+    T = [eye(3,3),Tc;
+        zeros(1,3),1];
+    
+    % Combined transformation. Note the inverse order of R and T compared
+    % with slide 13-14 in Lecture2_ImageFormationPartI.
+    M = K*P*T*R;
+    
+    % Perform transformation of axes points
+    axes2D = M*axes3D;
+    % Divide by homogeneous coordinates
+    axes2D = axes2D./repmat(axes2D(3,:),3,1);
+    
+    % Plot the axes as lines on top of the image
     % Hint: plot([x0 x1],[y0 y1])
-
+    plot([axes2D(1,1) axes2D(1,2)],[axes2D(2,1) axes2D(2,2)],'r','LineWidth',2);
+    plot([axes2D(1,1) axes2D(1,3)],[axes2D(2,1) axes2D(2,3)],'g','LineWidth',2);
+    plot([axes2D(1,1) axes2D(1,4)],[axes2D(2,1) axes2D(2,4)],'b','LineWidth',2);
     
     % Exercise draw a cube on top of the brochure
     % Hint: use the 3D world coordinates defined in the variable 'cube' from Exercise1
     % Note: since we perform a 2D projection, we use a simple plot-function
     % as opposed to the plot3-function in Exercise1.
-
+    cube2D = M*cube3D;
+    cube2D = cube2D./repmat(cube2D(3,:),3,1);
+    plot(cube2D(1,:),cube2D(2,:),'c-')
     
     pause % press a key to show next frame
 end
