@@ -1,15 +1,15 @@
 
 clear all; close all;
 
-VLFEATROOT = 'vlfeat-0.9.20';
+%VLFEATROOT = 'vlfeat-0.9.20';
 %run([VLFEATROOT '\toolbox\vl_setup.m']);
-addpath([VLFEATROOT,'\toolbox'])
+%addpath([VLFEATROOT,'\toolbox'])
 vl_setup()
 
-CALIBROOT = 'TOOLBOX_calib';
-addpath(CALIBROOT);
-MATLABFNSROOT = 'MatlabFns';
-addpath(genpath(MATLABFNSROOT))
+%CALIBROOT = 'TOOLBOX_calib';
+%addpath(CALIBROOT);
+%MATLABFNSROOT = 'MatlabFns';
+%addpath(genpath(MATLABFNSROOT))
 
 % Define coordinates of the brochure corners in 3D (Origo is the lower left corner)
 Coords3D = [0 21 0;

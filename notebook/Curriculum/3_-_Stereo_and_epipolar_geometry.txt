@@ -6,43 +6,67 @@ Creation-Date: 2022-02-07T20:19:51+01:00
 Created Monday 07 February 2022
 
 ===== Explain the term disparity, for instance using the parallel two-camera setup. =====
-
+{{./pasted_image.png}}
 ===== Know what is meant by triangulation. =====
-
+{{./pasted_image001.png}}
 ===== Explain the epipolar geometry for two camera views (e.g., epipoles, epipolar lines, epipolar plane). =====
-
+{{./pasted_image002.png}}
+{{./pasted_image003.png}}
 ===== Describe the epipolar constraint for calibrated and uncalibrated cameras, respectively (i.e., essential matrix versus fundamental matrix). =====
-
+{{./pasted_image004.png}}
+{{./pasted_image005.png}}
+{{./pasted_image007.png}}
+{{./pasted_image006.png}}
 ===== Motivate the use of stereo image rectification. =====
-
+{{./pasted_image008.png}}
 ===== Describe the process followed in triangulation. How many points are needed in order to calculate the real-world coordinates (X)? =====
+{{./pasted_image009.png}}
+{{./pasted_image010.png}}
 
 ===== Explain how to compute the fundamental matrix (i.e., stereo pipeline with weak calibration). =====
-
+{{./pasted_image011.png}}
 ===== Structure from motion (SFM) =====
 
+
 ==== Define the SFM problem. ====
+{{./pasted_image012.png}}
 
 ==== Explain what happens to the reconstruction if there are no constraints on the camera matrix or on the scene. ====
+{{./pasted_image013.png}}
 
-==== Describe how to solve the SFM problem with ====
+==== Describe how to solve the SFM problem with an affine camera and under orthography. ====
+{{./pasted_image014.png}}
+{{./pasted_image015.png}}
+{{./pasted_image016.png}}
+{{./pasted_image017.png}}
+==== Explain how to correct for affine ambiguity. ====
+{{./pasted_image018.png}}
+{{./pasted_image019.png}}
 
 ===== Photometric stereo =====
 
+{{./pasted_image020.png}}
 ==== Explain the basic idea underlying photometric stereo (or “shape from light”). ====
+{{./pasted_image021.png}}
+{{./pasted_image022.png}}
 
 ==== Describe the basic principle of “depth from normals”. ====
-
+{{./pasted_image023.png}}
+{{./pasted_image024.png}}
 ===== Shading =====
 
 ==== Describe the basics of light transport ====
-
+{{./pasted_image025.png}}
 ==== Illumination -> reflectance -> perception ====
-
+{{./pasted_image026.png}}
+{{./pasted_image027.png}}
 ==== Light sources ====
+{{./pasted_image028.png}}
 
 ==== Types of reflection ====
+{{./pasted_image029.png}}
 
 ==== Describe how shape from shading works ====
-
+{{./pasted_image030.png}}
 ==== Mention strategies for estimating light source directions. ====
+{{./pasted_image031.png}}
