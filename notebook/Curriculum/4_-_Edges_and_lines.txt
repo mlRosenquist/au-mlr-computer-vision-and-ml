@@ -6,19 +6,42 @@ Creation-Date: 2022-02-07T20:20:01+01:00
 Created Monday 07 February 2022
 
 ===== Explain how to detect edges using a gradient operator. =====
-
+{{./pasted_image.png}}
+{{./pasted_image002.png}}
 ===== Describe how to detect edges using the Laplacian of Gaussian (LoG) operator. =====
+{{./pasted_image003.png}}
 
 ===== Motivate the importance of prefiltering the image before gradient-based edge detection. =====
-
+{{./pasted_image004.png}}
+{{./pasted_image005.png}}
 ===== Explain how the Canny operator works with emphasis on non-maximum suppression and hysteresis. =====
-
+{{./pasted_image006.png}}
+{{./pasted_image007.png}}
+{{./pasted_image008.png}}
+{{./pasted_image009.png}}
+{{./pasted_image010.png}}
 ===== Explain how to generate a texton map. =====
+{{./pasted_image011.png}}
+{{./pasted_image012.png}}
+{{./pasted_image013.png}}
 
 ===== Explain how to detect edges between two textures using a half-disc detector. =====
+{{./pasted_image014.png}}
+{{./pasted_image015.png}}
 
 ===== List different strategies for linking edges (for example successive approximation of lines/curves) and edge thinning. =====
+{{./pasted_image016.png}}
+{{./pasted_image017.png}}
+{{./pasted_image018.png}}
+{{./pasted_image019.png}}
+{{./pasted_image020.png}}
 
 ===== Describe how supervised edge detectors work. =====
+{{./pasted_image026.png}}
+{{./pasted_image027.png}}
 
 ===== Describe how Hough Transform works and on what problems it can be applied to =====
+{{./pasted_image021.png}}
+{{./pasted_image023.png}}
+{{./pasted_image025.png}}
+{{./pasted_image024.png}}
