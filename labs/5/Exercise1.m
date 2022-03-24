@@ -1,12 +1,13 @@
 clear all; close all;
 
-addpath('MatlabSourceFiles');
-
-VLFEATROOT = 'vlfeat-0.9.20';
-%run([VLFEATROOT '\toolbox\vl_setup.m']);
-addpath([VLFEATROOT,'\toolbox'])
+VLFEATROOT =  '/home/mlrosenquist/MATLAB Add-Ons/computer-vision-and-ml/vlfeat-0.9.21-bin/vlfeat-0.9.21';
+run([VLFEATROOT '/toolbox/vl_setup.m']);
+addpath([VLFEATROOT,'/toolbox'])
 vl_setup()
-MATLABFNSROOT = 'MatlabFns';
+
+CALIBROOT =  '/home/mlrosenquist/MATLAB Add-Ons/computer-vision-and-ml/TOOLBOX_calib';
+addpath(CALIBROOT);
+MATLABFNSROOT = '/home/mlrosenquist/MATLAB Add-Ons/computer-vision-and-ml/MatlabFns';
 addpath(genpath(MATLABFNSROOT))
 
 I1 = rgb2gray(imread('left.jpg')); % left image
@@ -117,8 +118,8 @@ p = [204 907 905 818 544 534 194;
     1   1   1   1   1   1   1];
  
 % Transform feature points to fit the rectified left image
-fL = Hleft*p;
-fL = fL./repmat(fL(3,:),3,[]);
+%fL = Hleft*p;
+%fL = fL./repmat(fL(3,:),3,[]);
 
 % Define error functions:
 % Sum of Squared Differences
@@ -135,7 +136,7 @@ IRPad = double(padarray(IR,[floor(windowSize/2),floor(windowSize/2)]));
 
 % Uncomment the following line if you want to to test with SIFT-features 
 % instead of manually selected features.
-% fL = vl_sift(single(IL),'PeakThresh',15) ;
+fL = vl_sift(single(IL),'PeakThresh',15) ;
 
 fR = zeros(2,size(fL,2));
 IRPad(IRPad==0) = 255;
@@ -157,7 +158,11 @@ for f=1:size(fL,2)
     
     % costVec = [?,?,?,...]
     
-
+    width = size(IR,2);
+    costVec = zeros(1,width);
+    for c=1:width
+        costVec(c) = NCC(double(ILPad(rF:rF+windowSize-1,cF:cF+windowSize-1)),double(IRPad(rF:rF+windowSize-1,c:c+windowSize-1)));
+    end
     
     
     
@@ -175,7 +180,7 @@ for f=1:size(fL,2)
     
     fR(:,f) = [matchedInd;rF];
     
-    if 1 % optionally, change this to 0 when you are done debugging
+    if 0 % optionally, change this to 0 when you are done debugging
         figure(6);clf
         subplot(211);imshow(cat(2, IL, IR));hold on;
         plot([fL(1,f),fL(1,f)+size(IL,2)],[fL(2,f),fL(2,f)],'r.','MarkerSize',8);
@@ -211,7 +216,8 @@ T = 2000; % (made up) baseline
 % of the features.
 
 % Z = [?,?,?,...]
-
+disparities = fL(1,:)-fR(1,:);
+Z = f*T./disparities;
 
 
 % Illustrate estimated depths

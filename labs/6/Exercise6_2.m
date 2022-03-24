@@ -1,110 +1,103 @@
-clear all;
-close all;
+clear all;close all;
+
+VLFEATROOT =  '/home/mlrosenquist/MATLAB Add-Ons/computer-vision-and-ml/vlfeat-0.9.21-bin/vlfeat-0.9.21';
+run([VLFEATROOT '/toolbox/vl_setup.m']);
+addpath([VLFEATROOT,'/toolbox'])
+vl_setup()
+
+CALIBROOT =  '/home/mlrosenquist/MATLAB Add-Ons/computer-vision-and-ml/TOOLBOX_calib';
+addpath(CALIBROOT);
+MATLABFNSROOT = '/home/mlrosenquist/MATLAB Add-Ons/computer-vision-and-ml/MatlabFns';
+addpath(genpath(MATLABFNSROOT))
 
 addpath('MatlabSourceFiles');
 
-% Read test image
-I = imread('onion.png');
-I = im2double(rgb2gray(I));
+% Load test image:
+I = imread('bag.png');
+I=double(I)/255;
+figure,imshow(I);
 
-% Sigma controls the degree of smoothing
-sigma = 2;
+% Filter input image with 4 directional filters. Each filter is the
+% spatial derivative of a 2D Gaussian.
+angles = (0:45:135)/180*pi;
+sigma = 5;
+display = 1;
+disp('Press any key to continue')
+H=steerGaussMultipleAngles(I,angles,sigma,display);
 
-% Alpha controls edge thresholding
-alfa=0.1;
+numClust = 8;
 
-% Automatically determine necessary filter support (for Gaussian).
-Wx = floor((5/2)*sigma);
-if Wx < 1
-    Wx = 1;
+% Exercise: create 4-dimensional feature vectors and cluster them into 'numClust'
+% clusters. 'H' contains the responses of the 4 directional filters. Use
+% '[C,Ix] = vl_kmeans(datapoints,numClust)' to perform the clustering.
+% 'C' denotes the 4 cluster centers. A is a row vector specifying the 
+% assignments of 'datapoints' to these 'numClust' centers.
+
+% datapoints = ???
+% [C,Ix] = vl_kmeans(datapoints,numClust)
+
+datapts = reshape(H,[size(H,1)*size(H,2),size(H,3)]);
+
+% Cluster pixels into 4 clusters using K-means clustering
+[C,Ix]=vl_kmeans(datapts',numClust);
+
+% Exercise: construct and display the texton map. Use the assignments of 
+% pixels to the clusters from kmeans to construct 'textonMap'. Each pixel
+% should be assigned a cluster number as its intensity.
+% Hint: use show_norm_image(img) for visualization.
+
+% textonMap = ???
+% show_norm_image(textonMap)
+textonMap = reshape(double(Ix),size(I));
+figure,
+show_norm_image(textonMap)
+title('Texton map')
+
+% Show texton histograms of top half and bottom half of image
+tophalf_image = I(1:125,:);
+bottomhalf_image = I(126:250,:);
+tophalf_textonmap = textonMap(1:125,:);
+bottomhalf_textonmap = textonMap(126:250,:);
+figure
+subplot(3,2,1),imshow(tophalf_image),title('Top half of image')
+subplot(3,2,2),imshow(bottomhalf_image),title('Bottom half of image')
+subplot(3,2,3),show_norm_image(tophalf_textonmap),title('Top half texton map (=texton 1)')
+subplot(3,2,4),show_norm_image(bottomhalf_textonmap),title('Bottom half texton map (=texton 2)')
+subplot(3,2,5),hist(tophalf_textonmap(:),1:numClust),title('Histogram of texton 1')
+subplot(3,2,6),hist(bottomhalf_textonmap(:),1:numClust),title('Histogram of texton 2')
+
+% See if we can detect the horizontal edge between texture 1 and 2 using a
+% half-disc like filter.
+filter_width = 40;
+half_filter_width = filter_width/2;
+difference = zeros(1,250);
+for row = half_filter_width+1 : 250-half_filter_width
+    half1 = textonMap(row-half_filter_width:row-1,:);
+    half2 = textonMap(row:row+half_filter_width,:);
+    g = hist(half1(:),1:numClust);
+    h = hist(half2(:),1:numClust);
+    difference(row) = 0.5*sum((g-h).^2./(g+h));
 end
 
-% Smooth with a 2D Gaussian filter
-h = fspecial('gaussian',[2*Wx+1 2*Wx+1],sigma);
-Ismooth = imfilter(I,h,'same');
+% Find the largest edge (the maximum difference of histograms)
+[maxval,maxix] = max(difference);
 
-% Apply Sobel edge filter to find image gradient
-sobel_x = [ -1 0 1
-            -2 0 2
-            -1 0 1 ];
-sobel_y = [ -1 -2 -1
-             0  0  0
-             1  2  1 ];
-Ix = imfilter(Ismooth,sobel_x,'same');
-Iy = imfilter(Ismooth,sobel_y,'same');
+figure
+subplot(1,2,1),plot(1:250,difference,maxix,maxval,'r*')
+legend('Difference','Maximum difference','Location','NorthOutside') 
+title('Difference between histograms');
+xlabel('Image row coordinate')
+ylabel('Difference')
+subplot(1,2,2),imshow(I)
+line([1 size(I,1)],[maxix maxix])
+title('Detected edge')
 
-% Norm of the gradient (Combining the X and Y directional derivatives)
-Inorm=sqrt(Ix.*Ix+Iy.*Iy);
 
-% Thresholding
-I_max=max(Inorm(:));
-I_min=min(Inorm(:));
-level=alfa*(I_max-I_min)+I_min;
-ix = find(Inorm>=level);
-mask = zeros(size(Inorm));
-mask(ix) = 1;
-Ibw=double(mask).*Inorm;
 
-% Display
-figure(1)
-subplot(2,3,1),imshow(I),title('Input image')
-subplot(2,3,2),show_norm_image(Ix),title('Ix')
-subplot(2,3,3),show_norm_image(Iy),title('Iy')
-subplot(2,3,4),show_norm_image(Inorm);title('Gradient magnitude')
-subplot(2,3,5),imshow(mask),title('Initial thresholding')
 
-% Non-maximum suppression (Thin thresholded image using interpolation to
-% find the pixels where the norms of gradient are local maximum.)
-[n,m]=size(Ibw);
-EdgeMap = zeros(n,m);
-for i=2:n-1,
-    for j=2:m-1,
-        if mask(i,j) == 1
-            wsize = 3; % window size: used for visualizing the gradients in a neighborhood
-            xr = j-wsize:j+wsize;
-            yr = i-wsize:i+wsize;
-            [xrange, yrange] = meshgrid(xr,yr);
-            Z = interp2(Ibw, xrange, yrange,'nearest');
-            center = ceil(length(xr)/2);
-            
-            % Exercise: construct two gradient vectors with length 1
-            % for the point (i,j). The x- and y-values should be
-            % stored in the vectors, u and v, respectively.
-            % Look at slide 30 in Lecture6_EdgesAndLines.pdf.
-            % Hint: use the gradient maps, Ix and Iy, and normalize
-            % with Inorm.
-            
-            u = [0 0]; % Change this
-            v = [0 0]; % Change this
-            
-            if Inorm(i,j) > 0.3*I_max
-                figure(2)
-                imshow(Z./I_max,'InitialMagnification',10000);
-                hold on;
-                
-                % Exercise: plot the gradient vectors on top of the
-                % gradient map.
-                % Hint: use quiver(x,y,u,v,1,'r') to plot a red vector
-                % positioned at (x,y) with direction (u,v).
-                
-                % This pauses the execution of the script (for debugging).
-                % Comment out to make execution faster...
-                disp('Press any key to continue...')
-                pause
-            end
-            
-            % Here, we sample/interpolate from the gradient map at the end
-            % positions of the estimated vectors.
-            ZI=interp2(Z,u+center,v+center);
-            
-            % Exercise: assign 'EdgeMap(i,j)=1' if the current gradient at 
-            % (i,j) is larger than or equal to its two interpolated neighbors.
-            % This is the actual non-maximum suppression.
 
-            % if ... ?
-        end
-    end
-end
 
-figure(1)
-subplot(2,3,6),imshow(EdgeMap),title('After Thinning');
+
+
+
+

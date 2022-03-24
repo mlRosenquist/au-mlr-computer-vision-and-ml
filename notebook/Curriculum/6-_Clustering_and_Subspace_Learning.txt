@@ -5,57 +5,97 @@ Creation-Date: 2022-02-07T20:20:25+01:00
 ====== 6- Clustering and Subspace Learning ======
 
 ===== Describe the difference of in-sample and out-of-sample analysis. =====
+{{./pasted_image.png}}
+{{./pasted_image002.png}}
 
 ===== Describe what is model selection, optimization and evaluation. =====
-
+{{./pasted_image003.png}}
+{{./pasted_image004.png}}
+{{./pasted_image005.png}}
 ===== Describe the hierarchical process followed to select a ML model =====
 
 ==== Problem type identification ====
+{{./pasted_image006.png}}
 
 ==== Type of solutions applied (linear vs nonlinear) ====
+{{./pasted_image007.png}}
 
 ==== Other constraints ====
-
+{{./pasted_image008.png}}
 ==== Type of models ====
+{{./pasted_image009.png}}
 
 ==== Data collection and parameters optimization ====
-
+{{./pasted_image010.png}}
 ===== Describe the difference between convex vs non-convex optimization. =====
+{{./pasted_image011.png}}
 
 ===== Describe K-Means clustering (model’s parameters, and how they are optimized) =====
-
+{{./pasted_image012.png}}
 ===== Describe Mixture of Gaussians (model’s parameters, and how they are optimized) =====
-
+{{./pasted_image013.png}}
+{{./pasted_image014.png}}
 ===== What is K-Medoids =====
-
+{{./pasted_image015.png}}
 ===== Describe in words the two hierarchical clustering approaches =====
-
+{{./pasted_image016.png}}
+{{./pasted_image017.png}}
+{{./pasted_image018.png}}
+{{./pasted_image019.png}}
 ===== What is Self-Organizing Map? =====
-
+{{./pasted_image020.png}}
+{{./pasted_image021.png}}
 ===== Describe the problem of Dimensionality Reduction =====
+{{./pasted_image022.png}}
 
 ===== Principal Component Analysis (model’s parameters, how they are optimized) =====
+{{./pasted_image023.png}}
+{{./pasted_image024.png}}
+{{./pasted_image025.png}}
 
 ===== Non-negative Matrix Factorization (model’s parameters, how they are optimized) =====
-
+{{./pasted_image026.png}}
+{{./pasted_image027.png}}
 ===== Independent Component Analysis (model’s parameters, differences from PCA and NMF, generic description of the optimization process) =====
-
+{{./pasted_image029.png}}
+{{./pasted_image028.png}}
+{{./pasted_image030.png}}
+{{./pasted_image031.png}}
 ===== What are Random Projections? =====
+{{./pasted_image032.png}}
 
 ===== Linear Discriminant Analysis (model’s parameters, how they are optimized) =====
+{{./pasted_image033.png}}
+{{./pasted_image034.png}}
+
 
 ===== Graph-based subspace learning: =====
 
+
 ==== Describe the generic idea of using an intrinsic and a penalty graph for subspace learning ====
+{{./pasted_image037.png}}
 
 ==== Define the graph G = {V,E}; how is the data used to form a graph? ====
-
+{{./pasted_image035.png}}
 ==== Affinity and Weight matrix of a graph ====
+{{./pasted_image036.png}}
 
 ==== What is the Laplacian Matrix? ====
+{{./pasted_image038.png}}
+{{./pasted_image039.png}}
+{{./pasted_image040.png}}	
 
 ==== Express LDA as a graph-based subspace learning method ====
-
+{{./pasted_image041.png}}
+{{./pasted_image042.png}}
+{{./pasted_image043.png}}
+{{./pasted_image044.png}}
+{{./pasted_image045.png}}
+{{./pasted_image046.png}}
 ===== Describe Spectral Clustering method; What is it’s difference from K-Means? =====
-
+{{./pasted_image047.png}}
+{{./pasted_image048.png}}
 ===== Describe in words what is Multi-view Embedding and why it is used. =====
+{{./pasted_image049.png}}
+{{./pasted_image050.png}}
+
