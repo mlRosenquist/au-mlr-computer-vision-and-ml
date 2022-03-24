@@ -73,8 +73,10 @@ while not(done)
             % Task 1:
             % Calculate distance from seed point (Zref_vec) to all other pixels (Z).
             % (use Euclidian distance in feature space)
-            dist = rand(size(X))*10; % dist is set to random values. Change this!!!
-            
+            %dist = rand(size(X))*10; % dist is set to random values. Change this!!!
+            Zref = repmat(reshape(Zref_vec,[1 1 5]),[size(X) 1]);
+            dist = sqrt(sum((Z-Zref).^2,3));
+
             % Find all pixels whose distances to the seed point are smaller
             % than a threshold (radius)
             add_to_list = find(dist<radius);
@@ -87,9 +89,12 @@ while not(done)
                 % Task 2:
                 % Calculate the mean shift, i.e., the new coordinate of
                 % the seed point.
-                new_seedRow = randi(size(I,1)); % Random value. Change this!!
-                new_seedCol = randi(size(I,2)); % Random value. Change this!!
-                
+                %new_seedRow = randi(size(I,1)); % Random value. Change this!!
+                %new_seedCol = randi(size(I,2)); % Random value. Change this!!
+                [row,col] = ind2sub(size(X),add_to_list);
+                new_seedRow = mean(row);
+                new_seedCol = mean(col);
+
                 % Size of change in window position
                 change = sqrt((new_seedRow-seedRow(i))^2+(new_seedCol-seedCol(i))^2);
                 

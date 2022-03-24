@@ -14,8 +14,12 @@ imshow(I),title('Input image')
 % pixel. When you have the clustering up running, try adding spatial
 % coordinates (variables X and Y defined above).
 
-
-
+Z = I
+Z(:,:,4) = X
+Z(:,:,5) = Y
+Z(:,:,4) = X/max(X(:));
+Z(:,:,5) = Y/max(Y(:));
+datapts = reshape(Z,[],5);
 % Exercise: Use MATLAB's kmeans-function for clustering all 
 % observations/pixels into 'numClust' clusters. Save the cluster indices 
 % of all pixels in the variable 'cinds'.
@@ -23,7 +27,8 @@ imshow(I),title('Input image')
 % Try changing the number of clusters and see the impact.
 numClust = 10;
 
-cinds = zeros(size(I,1)*size(I,2),1); %% Replace this!
+[cinds, C] = kmeans(datapts, numClust)
+%cinds = zeros(size(I,1)*size(I,2),1); %% Replace this!
 
 % Plot clusters
 figure(1)
