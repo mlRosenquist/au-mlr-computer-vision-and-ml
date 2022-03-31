@@ -6,35 +6,75 @@ Creation-Date: 2022-02-07T20:20:38+01:00
 
 
 ===== Describe the Linear Regression model (model’s parameters, and how they are optimized). =====
-
+{{./pasted_image.png}}
+{{./pasted_image001.png}}
+{{./pasted_image002.png}}
+{{./pasted_image003.png}}
 ===== Describe the Ridge Regression model (difference from linear regression, model’s parameters, how they are optimized). =====
+{{./pasted_image004.png}}
+{{./pasted_image005.png}}
+
+
 
 ===== What is LASSO? Connection and differences from the above models. =====
-
+{{./pasted_image006.png}}
+{{./pasted_image007.png}}
 ===== Principal Components Regression =====
+{{./pasted_image008.png}}
+
+
 
 ===== Describe how can a regression model be used for classification. =====
+{{./pasted_image009.png}}
 
 ===== Describe the Logistic Regression model (model’s parameters, and how they are optimized); Describe why it is a probability-like model. =====
-
+{{./pasted_image010.png}}
+{{./pasted_image011.png}}
+{{./pasted_image012.png}}
+{{./pasted_image014.png}}
+{{./pasted_image015.png}}
+{{./pasted_image016.png}}
 ===== Describe the two ways that can be used to extend linear models to non-linear ones =====
+{{./pasted_image017.png}}
 
 ==== Use of explicit nonlinear mappings ====
-
+{{./pasted_image018.png}}
 ==== Use of implicit nonlinear mappings (kernels) ====
-
+{{./pasted_image023.png}}
+{{./pasted_image020.png}}
 ===== Describe RBF networks and its randomized counterparts. =====
-
+{{./pasted_image021.png}}
+{{./pasted_image022.png}}
 ===== Describe the Support Vector Machine classifier. =====
-
+{{./pasted_image024.png}}
+{{./pasted_image025.png}}
+{{./pasted_image026.png}}
+{{./pasted_image027.png}}
 ===== Describe what is a kernel function and what are the properties that a matrix needs to satisfy in order to be a kernel matrix. =====
-
+{{./pasted_image028.png}}
+{{./pasted_image029.png}}
 ===== Describe Kernel Discriminant Analysis as an extension of Linear Discriminant Analysis (using the Representer Theorem W = ΦA and the definition of the kernel matrix K = ΦΤΦ) =====
-
+{{./pasted_image030.png}}
+{{./pasted_image031.png}}
+{{./pasted_image032.png}}
+{{./pasted_image033.png}}
 ===== Describe how we can calculate the Eulidean distance between two vectors and how this can be used to extend k-Means to its kernel-based version. =====
 
 ===== Describe Kernel-based Regression. =====
 
+https://medium.com/udemy-engineering/understanding-k-means-clustering-and-kernel-methods-afad4eec3c11
+{{./pasted_image037.png}}
+{{./pasted_image038.png}}
+{{./pasted_image039.png}}
+{{./pasted_image040.png}}
+
+
 ===== What is the Nonlinear Projection Trick? =====
+{{./pasted_image041.png}}
+{{./pasted_image042.png}}
 
 ===== What is Nyström Approximation? In which cases do we use it? =====
+{{./pasted_image043.png}}
+{{./pasted_image044.png}}
+{{./pasted_image045.png}}
+{{./pasted_image046.png}}
