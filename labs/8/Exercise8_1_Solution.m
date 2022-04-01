@@ -29,12 +29,10 @@ disp(['Number of classes: ',num2str(K)])
 
 %%%%%% train a Regression-based classifier with varying regularization parameter value
 % first create the target matrix first
-% Exercise: Create the target matrix T with KxN elements
 T = zeros(K,N);
 for ii=1:N
     T(train_lbls(ii),ii) = 1.0;
 end
-
 
 % parameter set
 Cvec = [10^10 10.^(-3:3)];
@@ -45,13 +43,11 @@ for cc=1:length(Cvec)
 
     %%% training phase
     % train the classifier using the training data
-    % Exercise: Calculate the regression weight matrix W
     W = ((train_data*train_data' + (1/C)*eye(D))\train_data) * T';
-    
+
     
     %%% test phase
     % predict the outputs for the test data;
-    % Exercise: Calculate the responses for the test data
     Ot = W' * test_data;
     
     % classify test images using the maximum response
@@ -88,7 +84,6 @@ for ss=1:length(Svec)
         
         %%% training phase
         % calculate the kernel matrix for the training data
-        % Exercise: Calculate the RBF kernel matrix for the training data
         Dtrain = distance_matrix(train_data, train_data);  sigma = mean(mean(Dtrain));
         KHtrain = exp(-Dtrain/(S*sigma));
         
@@ -98,12 +93,10 @@ for ss=1:length(Svec)
 
         %%% test phase
         % calculate the kernel matrix for the test data
-        % Exercise: Calculate the kernel matrix for the test data
         Dtest = distance_matrix(test_data, train_data);
         Ktest = exp(-Dtest/(S*sigma));
         
         % predict the outputs for the test data;
-        % Exercise: Calculate the response for the test data
         Ot = A' * Ktest;
 
         % classify test images using the maximum response
@@ -127,14 +120,10 @@ for cc=1:length(Cvec)
     C = Cvec(cc);
     
     % train a OVR binary SVM model on the training data
-    % Exercise: Observe how the C binary classification models are
-    % calculated in an OVR manner
     cmd = ['-t 0 -b -q -c ',num2str(C),' -q'];
     model = ovrtrain(train_lbls', train_data', cmd);
     
     % classify the test data using the above model
-    % Exercise: Observe how the C binary classification models are
-    % combined for the prediction of the label of test samples
     pred_lbls = ovrpredict(test_lbls', test_data', model);
     
     % measure the performance using the classification rate
