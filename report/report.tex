@@ -1,0 +1,84 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage{graphicx}
+\usepackage[colorlinks = true,
+            linkcolor = black,
+            urlcolor  = blue,
+            citecolor = black,
+            anchorcolor = blue]{hyperref}
+\usepackage{amsmath,amssymb,amsfonts, mathtools}
+\usepackage{algorithmic}
+\usepackage{textcomp}
+\usepackage{lipsum}                     
+\usepackage{xargs}                      
+\usepackage[pdftex,dvipsnames, table]{xcolor}  
+\usepackage[table]{xcolor}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{stfloats}
+\usepackage{bbm}
+\usepackage[
+backend=biber,
+style=numeric,
+sorting=ynt
+]{biblatex}
+\addbibresource[]{misc/references.bib}
+
+\rowcolors{2}{gray!10}{white}
+
+\newcommand{\titlecol}{\cellcolor{gray!30}}
+
+% 
+\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+\newcommandx{\unfinished}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
+\newcommandx{\change}[2][1=]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}
+\newcommandx{\info}[2][1=]{\todo[linecolor=OliveGreen,backgroundcolor=OliveGreen!25,bordercolor=OliveGreen,#1]{#2}}
+\newcommandx{\improvement}[2][1=]{\todo[linecolor=Plum,backgroundcolor=Plum!25,bordercolor=Plum,#1]{#2}}
+\newcommandx{\thiswillnotshow}[2][1=]{\todo[disable,#1]{#2}}
+
+\begin{document}
+\title{AI prediction model for Knee Arthroplasty\\
+{\LARGE Computer Vision and Machine Learning}\\
+{\large Source Code: \href{https://github.com/mlRosenquist/au-mlr-computer-vision-and-ml/tree/master/project}{github}}\\
+{\large Kaggle: \href{https://www.kaggle.com/mortenrosenquist} {mortenrosenquist}}
+}
+
+\author{\IEEEauthorblockN{Morten Lyng Rosenquist}
+\IEEEauthorblockA{\textit{Faculty of Technical Sciences} \\
+\textit{Aarhus University}\\
+Aarhus, Denmark \\
+201706031 \\ \\ 
+\today
+}
+}
+
+\maketitle
+
+\begin{abstract}
+\unfinished{Write Abstract}
+\end{abstract}
+
+\begin{IEEEkeywords}
+  \unfinished{Write keywords}
+\end{IEEEkeywords}
+
+\section{Introduction}
+\input{contents/introduction.tex}
+
+\section{Database}
+\input{contents/database.tex}
+
+\section{Methods}
+\input{contents/methods.tex}
+
+\section{Results}
+\input{contents/results.tex}
+
+\section{Discussion}
+\input{contents/discussion.tex}
+
+\section{Conclusion}
+\input{contents/conclusion.tex}
+
+\printbibliography
+\end{document}
