@@ -1,1 +1,8 @@
-\unfinished{Write Methods}
+\unfinished{Write method intro}
+\subsection*{Preprocesssing}
+The dataset contains two types of features - boolean (yes/no) and continous values (numeric). The dataset is not complete, meaning some observations are missing values in certain features. To overcome this the mean value is used for the numeric features and the most popular for the boolean features. As the features are in different units it is important to scale the data. Without scaling certain features might dominate the other features. This is specially the case for SVC, because it tries to maximize the distance between the support vectors and the hyperplane. \textit{sklearn} have different options for scaling; StandardScaler, MinMaxScaler and RobusScaler. The MinMaxScaler with default settings will suffice with a scaling of each feature individually between 0 and 1 \todo{cite}.        
+
+\subsection*{Model training}
+\unfinished{Feature selection}
+\unfinished{Pipeline}
+\unfinished{GridSearch}

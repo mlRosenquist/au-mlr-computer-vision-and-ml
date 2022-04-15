@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.11.16)  15 APR 2022 10:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.11.18)  15 APR 2022 22:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -502,7 +502,7 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \bibhang=\skip70
 \blx@bcfin=\read2
 \blx@bcfout=\write3
-\blx@langwohyphens=\language3
+\blx@langwohyphens=\language85
 \c@mincomprange=\count345
 \c@maxcomprange=\count346
 \c@mincompwidth=\count347
@@ -935,53 +935,186 @@ LaTeX Warning: Marginpar on page 1 moved.
 
 LaTeX Warning: Marginpar on page 1 moved.
 
-) (./contents/database.tex
-Overfull \hbox (6.52475pt too wide) in paragraph at lines 1--1
-\OT1/ptm/m/n/5 Database[]  
+
+Overfull \hbox (0.97488pt too wide) in paragraph at lines 3--3
+[][][]\OT1/ptm/m/n/5 binary 
  []
 
 
-Overfull \hbox (6.52475pt too wide) in paragraph at lines 1--1
-\OT1/ptm/m/n/5 Database[]  
+Overfull \hbox (0.97488pt too wide) in paragraph at lines 3--3
+[][][]\OT1/ptm/m/n/5 binary 
+ []
+
+
+LaTeX Warning: Marginpar on page 1 moved.
+
+
+Overfull \hbox (3.19485pt too wide) in paragraph at lines 7--7
+[][][]\OT1/ptm/m/n/5 Include 
+ []
+
+
+Overfull \hbox (3.19485pt too wide) in paragraph at lines 7--7
+[][][]\OT1/ptm/m/n/5 Include 
  []
 
 
 LaTeX Warning: Marginpar on page 1 moved.
 
 ) (./contents/methods.tex
-
-LaTeX Warning: Marginpar on page 1 moved.
-
-) (./contents/results.tex
-
-LaTeX Warning: Marginpar on page 1 moved.
-
-) (./contents/discussion.tex
-
-LaTeX Warning: Marginpar on page 1 moved.
-
-) (./contents/conclusion.tex
-
-LaTeX Warning: Marginpar on page 1 moved.
-
-)
-
-LaTeX Warning: Empty bibliography on input line 83.
+Overfull \hbox (3.19984pt too wide) in paragraph at lines 1--1
+\OT1/ptm/m/n/5 method 
+ []
 
 
-** Conference Paper **
-Before submitting the final camera ready copy, remember to:
-
- 1. Manually equalize the lengths of two columns on the last page
- of your paper;
-
- 2. Ensure that any PostScript and/or PDF output post-processing
- uses only Type 1 fonts and that every step in the generation
- process uses the appropriate paper size.
+Overfull \hbox (3.19984pt too wide) in paragraph at lines 1--1
+\OT1/ptm/m/n/5 method 
+ []
 
 [1{/usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): ambiguous entry for `UniClass[letter]': font file present but not included, will be treated as font file not present
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pagd8y' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pagdo8y' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pagk8y' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pagko8y' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pbkd8y' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pbkdi8y' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): invalid entry for `pbkdo8y': SlantFont/ExtendFont can be used only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pbkl8y' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pbkli8y' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): invalid entry for `pbklo8y': SlantFont/ExtendFont can be used only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pcrb8y' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pcrbo8y' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pcrr8y' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pcrro8y' already exists, duplicates ignored
+
+
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): invalid entry for `pcrr8rn': SlantFont/ExtendFont can be used only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `phvb8y' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `phvb8yn' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `phvbo8y' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `phvbo8yn' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `phvr8y' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `phvr8yn' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `phvro8y' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `phvro8yn' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pncb8y' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pncbi8y' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): invalid entry for `pncbo8y': SlantFont/ExtendFont can be used only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pncr8y' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pncri8y' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): invalid entry for `pncro8y': SlantFont/ExtendFont can be used only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pplb8y' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pplbi8y' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): invalid entry for `pplbo8y': SlantFont/ExtendFont can be used only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): invalid entry for `pplbu8y': SlantFont/ExtendFont can be used only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pplr8y' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): invalid entry for `pplr8yn': SlantFont/ExtendFont can be used only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pplri8y' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): invalid entry for `pplro8y': SlantFont/ExtendFont can be used only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): invalid entry for `pplrr8ye': SlantFont/ExtendFont can be used only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): invalid entry for `pplru8y': SlantFont/ExtendFont can be used only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `ptmb8y' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `ptmbi8y' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): invalid entry for `ptmbo8y': SlantFont/ExtendFont can be used only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `ptmr8y' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): invalid entry for `ptmr8yn': SlantFont/ExtendFont can be used only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `ptmri8y' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): invalid entry for `ptmro8y': SlantFont/ExtendFont can be used only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): invalid entry for `ptmrr8ye': SlantFont/ExtendFont can be used only with embedded Type1 fonts
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): ambiguous entry for `rpcxbsl': font file present but not included, will be treated as font file not present
@@ -1032,58 +1165,370 @@ pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/upd
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): ambiguous entry for `rpxsl': font file present but not included, will be treated as font file not present
 
 
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pzcmi8y' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pagd8g' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pagdo8g' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pagk8g' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pagko8g' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pbkd8g' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pbkdi8g' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pbkl8g' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pbkli8g' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pcrb8g' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pcrbo8g' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pcrr8g' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pcrro8g' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `phvb8g' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `phvbo8g' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `phvr8g' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `phvro8g' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pncb8g' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pncbi8g' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pncr8g' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pncri8g' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pplb8g' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pplbi8g' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pplr8g' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pplri8g' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `psyr' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `psyrgo' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `ptmb8g' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `ptmbi8g' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `ptmr8g' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `ptmri8g' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pzcmi8g' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pzdr' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): ambiguous entry for `rtcxbsl': font file present but not included, will be treated as font file not present
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): ambiguous entry for `rtcxbsso': font file present but not included, will be treated as font file not present
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): ambiguous entry for `rtcxsl': font file present but not included, will be treated as font file not present
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): ambiguous entry for `rtcxsssl': font file present but not included, will be treated as font file not present
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): ambiguous entry for `rtxbsl': font file present but not included, will be treated as font file not present
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): ambiguous entry for `rtxbsssl': font file present but not included, will be treated as font file not present
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): ambiguous entry for `rtxphvb': font file present but not included, will be treated as font file not present
+
+
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `rtxphvb' already exists, duplicates ignored
 
 
-pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): invalid entry for `rtxphvbo': SlantFont/ExtendFont can be used only with embedded Type1 fonts
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): ambiguous entry for `rtxphvbo': font file present but not included, will be treated as font file not present
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `rtxphvbo' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): ambiguous entry for `rtxphvr': font file present but not included, will be treated as font file not present
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `rtxphvr' already exists, duplicates ignored
 
 
-pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): invalid entry for `rtxphvro': SlantFont/ExtendFont can be used only with embedded Type1 fonts
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): ambiguous entry for `rtxphvro': font file present but not included, will be treated as font file not present
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `rtxphvro' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): ambiguous entry for `rtxptmb': font file present but not included, will be treated as font file not present
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `rtxptmb' already exists, duplicates ignored
 
 
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): ambiguous entry for `rtxptmbi': font file present but not included, will be treated as font file not present
+
+
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `rtxptmbi' already exists, duplicates ignored
 
 
-pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): invalid entry for `rtxptmbo': SlantFont/ExtendFont can be used only with embedded Type1 fonts
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): ambiguous entry for `rtxptmbo': font file present but not included, will be treated as font file not present
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `rtxptmbo' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): ambiguous entry for `rtxptmr': font file present but not included, will be treated as font file not present
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `rtxptmr' already exists, duplicates ignored
 
 
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): ambiguous entry for `rtxptmri': font file present but not included, will be treated as font file not present
+
+
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `rtxptmri' already exists, duplicates ignored
 
 
-pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): invalid entry for `rtxptmro': SlantFont/ExtendFont can be used only with embedded Type1 fonts
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): ambiguous entry for `rtxptmro': font file present but not included, will be treated as font file not present
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `rtxptmro' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): ambiguous entry for `rtxsl': font file present but not included, will be treated as font file not present
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): ambiguous entry for `rtxsssl': font file present but not included, will be treated as font file not present
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): ambiguous entry for `t1xbttsl': font file present but not included, will be treated as font file not present
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): ambiguous entry for `t1xttsl': font file present but not included, will be treated as font file not present
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): ambiguous entry for `tcxbttsl': font file present but not included, will be treated as font file not present
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): ambiguous entry for `tcxttsl': font file present but not included, will be treated as font file not present
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): ambiguous entry for `txbttsl': font file present but not included, will be treated as font file not present
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): ambiguous entry for `txttsl': font file present but not included, will be treated as font file not present
 }
 
 
+]
+Overfull \hbox (3.1948pt too wide) in paragraph at lines 6--6
+[][][]\OT1/ptm/m/n/5 Feature 
+ []
+
+
+Overfull \hbox (3.1948pt too wide) in paragraph at lines 6--6
+[][][]\OT1/ptm/m/n/5 Feature 
+ []
+
+
+LaTeX Warning: Marginpar on page 2 moved.
+
+
+Overfull \hbox (4.58972pt too wide) in paragraph at lines 7--7
+[][][]\OT1/ptm/m/n/5 Pipeline[]  
+ []
+
+
+Overfull \hbox (4.58972pt too wide) in paragraph at lines 7--7
+[][][]\OT1/ptm/m/n/5 Pipeline[]  
+ []
+
+
+LaTeX Warning: Marginpar on page 2 moved.
+
+
+Overfull \hbox (10.96976pt too wide) in paragraph at lines 8--8
+[][][]\OT1/ptm/m/n/5 GridSearch[]  
+ []
+
+
+Overfull \hbox (10.96976pt too wide) in paragraph at lines 8--8
+[][][]\OT1/ptm/m/n/5 GridSearch[]  
+ []
+
+
+LaTeX Warning: Marginpar on page 2 moved.
+
+) (./contents/results.tex
+
+LaTeX Warning: Marginpar on page 2 moved.
+
+
+Overfull \hbox (1.25485pt too wide) in paragraph at lines 3--3
+\OT1/ptm/m/n/5 Model[]  
+ []
+
+
+Overfull \hbox (1.25485pt too wide) in paragraph at lines 3--3
+\OT1/ptm/m/n/5 Model[]  
+ []
+
+
+LaTeX Warning: Marginpar on page 2 moved.
+
+
+LaTeX Warning: Marginpar on page 2 moved.
+
+
+LaTeX Warning: Marginpar on page 2 moved.
+
+
+Overfull \hbox (9.03482pt too wide) in paragraph at lines 11--11
+[][][]\OT1/ptm/m/n/5 Confusion 
+ []
+
+
+Overfull \hbox (9.03482pt too wide) in paragraph at lines 11--11
+[][][]\OT1/ptm/m/n/5 Confusion 
+ []
+
+
+LaTeX Warning: Marginpar on page 2 moved.
+
+) (./contents/discussion.tex
+
+LaTeX Warning: Marginpar on page 2 moved.
+
+
+LaTeX Warning: Marginpar on page 2 moved.
+
+
+Overfull \hbox (1.94984pt too wide) in paragraph at lines 5--5
+\OT1/ptm/m/n/5 model, 
+ []
+
+
+Overfull \hbox (1.94984pt too wide) in paragraph at lines 5--5
+\OT1/ptm/m/n/5 model, 
+ []
+
+
+LaTeX Warning: Marginpar on page 2 moved.
+
+) (./contents/conclusion.tex
+
+LaTeX Warning: Marginpar on page 2 moved.
+
+
+Overfull \hbox (0.69984pt too wide) in paragraph at lines 3--3
+\OT1/ptm/m/n/5 model[]  
+ []
+
+
+Overfull \hbox (0.69984pt too wide) in paragraph at lines 3--3
+\OT1/ptm/m/n/5 model[]  
+ []
+
+
+LaTeX Warning: Marginpar on page 2 moved.
+
+
+Overfull \hbox (6.24985pt too wide) in paragraph at lines 5--5
+[][][]\OT1/ptm/m/n/5 conclude 
+ []
+
+
+Overfull \hbox (6.24985pt too wide) in paragraph at lines 5--5
+[][][]\OT1/ptm/m/n/5 conclude 
+ []
+
+
+LaTeX Warning: Marginpar on page 2 moved.
+
+)
+
+LaTeX Warning: Empty bibliography on input line 80.
+
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+[2
 
 ] (./report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 901720FFFE390B61E567817CE6FCA541;528.
+(rerunfilecheck)             Checksum: D8CDBE15C5EDCE9238FDFB6D9F079726;445.
 Package logreq Info: Writing requests to 'report.run.xml'.
 \openout1 = `report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30320 strings out of 480852
- 566754 string characters out of 5906872
- 1364439 words of memory out of 6000000
- 47167 multiletter control sequences out of 15000+600000
+ 30464 strings out of 478862
+ 569883 string characters out of 5858944
+ 1388372 words of memory out of 6000000
+ 47590 multiletter control sequences out of 15000+600000
  436031 words of font info for 78 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 99i,9n,131p,801b,984s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 1137 hyphenation exceptions out of 8191
+ 99i,9n,131p,1004b,984s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report.pdf (1 page, 37757 bytes).
+Output written on report.pdf (2 pages, 48387 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
- 16 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 102 PDF objects out of 1000 (max. 8388607)
+ 89 compressed objects within 1 object stream
+ 37 named destinations out of 1000 (max. 500000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
