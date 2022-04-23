@@ -1,9 +1,15 @@
-[0] Config.pm:311> INFO - This is Biber 2.16
-[0] Config.pm:314> INFO - Logfile is 'report.blg'
-[144] biber:340> INFO - === Tue Apr 19, 2022, 07:45:54
-[167] Biber.pm:415> INFO - Reading 'report.bcf'
-[310] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
-[323] Utils.pm:395> WARN - The file 'report.bcf' does not contain any citations!
-[337] bbl.pm:654> INFO - Writing 'report.bbl' with encoding 'UTF-8'
-[338] bbl.pm:757> INFO - Output to report.bbl
-[339] Biber.pm:128> INFO - WARNINGS: 1
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'report.blg'
+[53] biber:340> INFO - === Fri Apr 22, 2022, 23:45:50
+[63] Biber.pm:418> INFO - Reading 'report.bcf'
+[120] Biber.pm:972> INFO - Found 4 citekeys in bib section 0
+[131] Biber.pm:4383> INFO - Processing section 0
+[138] Biber.pm:4574> INFO - Looking for bibtex file 'misc/references.bib' for section 0
+[138] bibtex.pm:1713> INFO - LaTeX decoding ...
+[141] bibtex.pm:1518> INFO - Found BibTeX data source 'misc/references.bib'
+[191] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[192] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[192] Biber.pm:4203> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'en-US'
+[192] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[197] bbl.pm:654> INFO - Writing 'report.bbl' with encoding 'UTF-8'
+[200] bbl.pm:757> INFO - Output to report.bbl
