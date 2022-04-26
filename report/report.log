@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.24)  26 APR 2022 15:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.24)  26 APR 2022 15:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -928,7 +928,7 @@ Package biblatex Info: Reference segment=0 on input line 39.
 
 Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 39.
 
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 59.
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 60.
 (contents/introduction.tex) (contents/method.tex [1{C:/Users/MLR/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 
@@ -998,7 +998,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 53--54
  []
 
 ) (contents/conclusion.tex)
-Underfull \hbox (badness 1577) in paragraph at lines 78--78
+Underfull \hbox (badness 1577) in paragraph at lines 79--79
 \OT1/ptm/m/n/10 El-e-ments of Sta-tis-ti-cal Learn-ing - 2. Edi-tion''. In:
  []
 
@@ -1032,7 +1032,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  99i,9n,131p,1241b,1421s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/MLR/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/MLR/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/MLR/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/MLR/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/MLR/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/MLR/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/MLR/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/MLR/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/MLR/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report.pdf (5 pages, 262623 bytes).
+Output written on report.pdf (5 pages, 262694 bytes).
 PDF statistics:
  171 PDF objects out of 1000 (max. 8388607)
  30 named destinations out of 1000 (max. 500000)
