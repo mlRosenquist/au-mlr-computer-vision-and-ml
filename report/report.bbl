@@ -19,6 +19,44 @@
 
 \refsection{0}
   \datalist[entry]{ynt/global//global/global}
+    \entry{W-SVM}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=f7e0ec44948f235e2b5fcbe526a0266f}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Xulei},
+           giveni={X\bibinitperiod}}}%
+        {{hash=492d11c5af55f9e608d85cc79b85cdee}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Qing},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=2344d0fa538eff98ea5a92384b2c0b80}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{067566e0a623520c9013bb81cfa58d90}
+      \strng{fullhash}{067566e0a623520c9013bb81cfa58d90}
+      \strng{bibnamehash}{067566e0a623520c9013bb81cfa58d90}
+      \strng{authorbibnamehash}{067566e0a623520c9013bb81cfa58d90}
+      \strng{authornamehash}{067566e0a623520c9013bb81cfa58d90}
+      \strng{authorfullhash}{067566e0a623520c9013bb81cfa58d90}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings. 2005 IEEE International Joint Conference on Neural Networks, 2005.}
+      \field{title}{Weighted support vector machine for data classification}
+      \field{volume}{2}
+      \field{year}{2005}
+      \field{pages}{859\bibrangedash 864 vol. 2}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1109/IJCNN.2005.1555965
+      \endverb
+    \endentry
     \entry{scikit-learn}{article}{}
       \name{author}{16}{}{%
         {{hash=6e96fec0d63277626bb324bd28cdecb7}{%
@@ -188,6 +226,33 @@
       \field{labeltitlesource}{title}
       \field{addendum}{(accessed: 22.04.2022)}
       \field{title}{Cost-Sensitive SVM for Imbalanced Classification}
+      \verb{urlraw}
+      \verb https://towardsdatascience.com/grid-search-for-parameter-tunning-3c6ff94e7a25
+      \endverb
+      \verb{url}
+      \verb https://towardsdatascience.com/grid-search-for-parameter-tunning-3c6ff94e7a25
+      \endverb
+    \endentry
+    \entry{CV}{online}{}
+      \name{author}{1}{}{%
+        {{hash=d6e1e7f223a297c5cc368f94ca7f953a}{%
+           family={Konkiewicz},
+           familyi={K\bibinitperiod},
+           given={Magdalena},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{d6e1e7f223a297c5cc368f94ca7f953a}
+      \strng{fullhash}{d6e1e7f223a297c5cc368f94ca7f953a}
+      \strng{bibnamehash}{d6e1e7f223a297c5cc368f94ca7f953a}
+      \strng{authorbibnamehash}{d6e1e7f223a297c5cc368f94ca7f953a}
+      \strng{authornamehash}{d6e1e7f223a297c5cc368f94ca7f953a}
+      \strng{authorfullhash}{d6e1e7f223a297c5cc368f94ca7f953a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(accessed: 26.04.2022)}
+      \field{title}{Grid search for parameter tuning}
       \verb{urlraw}
       \verb https://machinelearningmastery.com/cost-sensitive-svm-for-imbalanced-classification/
       \endverb

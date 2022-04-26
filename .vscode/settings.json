@@ -7,5 +7,6 @@
     "markdown",
     "latex",
     "plaintext"
-  ]
+  ],
+  "FSharp.suggestGitignore": false
 }

@@ -2347,13 +2347,16 @@
     <bcf:citekey order="1">problem-description</bcf:citekey>
     <bcf:citekey order="2">svm-imbalanced-data</bcf:citekey>
     <bcf:citekey order="3">statistical-book</bcf:citekey>
-    <bcf:citekey order="4">svm-imbalanced-data</bcf:citekey>
-    <bcf:citekey order="5">scikit-learn</bcf:citekey>
+    <bcf:citekey order="4">W-SVM</bcf:citekey>
+    <bcf:citekey order="5">CV</bcf:citekey>
     <bcf:citekey order="6">scikit-learn</bcf:citekey>
-    <bcf:citekey order="7">problem-description</bcf:citekey>
-    <bcf:citekey order="8">svm-imbalanced-data</bcf:citekey>
-    <bcf:citekey order="9">statistical-book</bcf:citekey>
-    <bcf:citekey order="10">scikit-learn</bcf:citekey>
+    <bcf:citekey order="7">scikit-learn</bcf:citekey>
+    <bcf:citekey order="8">problem-description</bcf:citekey>
+    <bcf:citekey order="9">svm-imbalanced-data</bcf:citekey>
+    <bcf:citekey order="10">statistical-book</bcf:citekey>
+    <bcf:citekey order="11">W-SVM</bcf:citekey>
+    <bcf:citekey order="12">CV</bcf:citekey>
+    <bcf:citekey order="13">scikit-learn</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="ynt">

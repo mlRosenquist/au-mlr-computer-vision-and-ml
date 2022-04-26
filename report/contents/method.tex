@@ -1,5 +1,20 @@
-\subsection{Metrics}
-\subsection{SVM}
-\subsection{CV}
-Being stratified means that we have the same class ratio across all folds.
-\subsection{Imbalanced data}
+This section will cover some of the methodologies and techniques used to train and test the model.
+
+\subsection{Imbalanced Data}
+Building a model with imbalanced data can lead to problems. As the model primarily sees the majority class it might not learn enough from the minority class. This can lead to a model predicting all new observations as the majority class. This will lead to a high accuracy and recall for the majority class but a recall of 0 on the minority class. This is basically an useless model, that wont predict any of the minority class observations. In the clinical setting this means that we wont place any patients in the risk group. There are several ways to mitigate the issues with imbalanced data. The majority class can be downsampled, the minority class can be oversampled or for certain models we can tune the importance of each class during training \cite*{svm-imbalanced-data}.
+
+\subsection{Support Vector Machine}
+SVM produces nonlinear boundaries by creating a linear boundary in a tranformed version of the feature space. With this functionality SVMs can be used for classification, regression and outlier detection. We will use it for classification. In its simplest form the SVM creates an linear optimal seperating hyperplane between two seperated classes. This is done by maximizing the margin between each support vector. Where classes can not be seperated by a linear boundary other kernels(polynomial, Radial Basis Function) can be utilized. There are hyper-parameters to be tuned of the SVM. The most important is the regularization parameter that determines the amount of punishment for misclassifications. Utilizing a polynomial kernel the degree of the kernel function is also to be tuned \cite{statistical-book}. Default SVM does not perform well on imbalanced data, as the margin will favor the majority class. However, SVM can be extended to account for the  importance of each class when maximizing the margin. The modified model is also reffered to as weighted SVM \cite{W-SVM}.
+   
+\subsection{Feature Selection}
+The dataset contains a range of features regarding the patients. Having data with a high dimensionality can lead to problems such as long training time, a complex model and overfitting. Therefore, it will prefered if we can reduce the dimensionality while still having good performance of the model. This can be done by selecting the features that contribute the most to the target variable. This is typically supervised and will keep features intact. Principal Component Analysis can also be used to reduce the amount of features. This will however transform the features based on variance. In regards to a clinical settings it would be interesting to see which features are the most valuable in terms of determining wether an patient is in the risk group.
+
+\subsection{Cross-validation, Grid Search and Metrics}
+The search of the optimal parameters of the model can be done in several ways. A technique is to combine Cross-validation(CV) and grid search. CV takes the training data, splits it in $k$ folds, where $k \in Z$. The model is then trained on different combinations of the data in different iterations. Stratified CV is then extending this with the ensurance of the same class ratio across all folds \cite{CV}.
+
+Grid Search is to define a grid of different parameters for the model. Each combination of parameters is then trained with CV. Each combination will receive a training score for each fold. An average of the combination are calculated, and used to determine the optimal parameters.
+
+The scoring metric used to rank the various combinations may have a high impact in the behaviour of the model. The  different performance metrics used in the report are: precision, recall, f1 and roc-auc. Deciding which metric to use depends on the requirements of the model. As an example, the f1-score rewards true positives more than false positives are punished. Therefore when ranking the grid search according to the f1-score, then it will likely be predicting more trues, than a model ranked by recall.    
+
+
+
