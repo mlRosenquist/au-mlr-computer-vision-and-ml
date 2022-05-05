@@ -1,15 +1,15 @@
-[0] Config.pm:307> INFO - This is Biber 2.17
-[0] Config.pm:310> INFO - Logfile is 'report.blg'
-[193] biber-MSWIN64:340> INFO - === 
-[247] Biber.pm:418> INFO - Reading 'report.bcf'
-[437] Biber.pm:972> INFO - Found 6 citekeys in bib section 0
-[460] Biber.pm:4383> INFO - Processing section 0
-[478] Biber.pm:4574> INFO - Looking for bibtex file 'misc/references.bib' for section 0
-[539] bibtex.pm:1713> INFO - LaTeX decoding ...
-[554] bibtex.pm:1518> INFO - Found BibTeX data source 'misc/references.bib'
-[687] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[688] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[688] Biber.pm:4203> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'en-US'
-[688] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
-[704] bbl.pm:654> INFO - Writing 'report.bbl' with encoding 'UTF-8'
-[711] bbl.pm:757> INFO - Output to report.bbl
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'report.blg'
+[71] biber:340> INFO - === Thu May  5, 2022, 07:45:54
+[86] Biber.pm:415> INFO - Reading 'report.bcf'
+[157] Biber.pm:952> INFO - Found 6 citekeys in bib section 0
+[174] Biber.pm:4340> INFO - Processing section 0
+[191] Biber.pm:4531> INFO - Looking for bibtex format file 'misc/references.bib' for section 0
+[192] bibtex.pm:1689> INFO - LaTeX decoding ...
+[197] bibtex.pm:1494> INFO - Found BibTeX data source 'misc/references.bib'
+[294] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[295] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[295] Biber.pm:4168> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'en-US'
+[295] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[318] bbl.pm:654> INFO - Writing 'report.bbl' with encoding 'UTF-8'
+[325] bbl.pm:757> INFO - Output to report.bbl

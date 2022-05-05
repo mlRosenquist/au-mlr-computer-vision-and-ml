@@ -2,7 +2,7 @@ This section will cover the performed experiments, how they are conducted and th
 
 
 \subsection{Preprocesssing}
-The dataset contains two types of features - boolean (yes/no) and continous values (numeric). The dataset is not complete, meaning some observations are missing values in certain features. To overcome this the mean value is used for the numeric features and the most popular for the boolean features. As the features are in different units it is important to scale the data. Without scaling certain features might dominate the other features. This is specially the case for SVC, because it tries to maximize the distance between the support vectors and the hyperplane. \textit{sklearn} have different options for scaling; StandardScaler, MinMaxScaler and RobustScaler. The MinMaxScaler with default settings will suffice with a scaling of each feature individually between 0 and 1\cite{scikit-learn}. In the performance of scaling and filling in missing values it is done by fitting on the training data. Then utilizing that to transform the train, validation and test data. 
+The dataset contains two types of features - boolean (yes/no) and continuous values (numeric). The dataset is not complete, meaning some observations are missing values in certain features. To overcome this the mean value is used for the numeric features and the most popular for the boolean features. As the features are in different units it is important to scale the data. Without scaling certain features might dominate the other features. This is specially the case for SVC, because it tries to maximize the distance between the support vectors and the hyperplane. \textit{sklearn} has different options for scaling; StandardScaler, MinMaxScaler and RobustScaler. The MinMaxScaler with default settings will suffice with a scaling of each feature individually between 0 and 1\cite{scikit-learn}. In the performance of scaling and filling in missing values it is done by fitting on the training data. Then utilizing that to transform the train, validation and test data. 
 
 \subsection{Model training}
 Tuning the model to perform as desired is not a trivial task and it is highly dependent on the use case. Initially, there is several questions to be answered such as: How do we train the model? Do we use the raw training data? Are we to use sampling methods? How do we test different model parameters? Which metrics are used to train/evaluate the model? Answering these differently will lead to very diverse models. Due to lack of experience, this section will cover a trial and error approach. Firstly, a model is trained with default parameters. Then we look into tuning the model in various ways. The different models are concurrently evaluated. \\
@@ -46,7 +46,7 @@ There are eight different $C$ values. However, less are showed on the plots. Thi
   \label{fig:results_gridcv_balanced_C_metrics}
 \end{figure}
 
-There are still many misclassified observations. The next step that we will is feature selection. We will utilize \textit{SelectKBest} with \textit{chi2} as selection method. The selection step is included in the grid search of the best set of parameters. We try with a range of \textit{k} features. The best model according to precision ends up being, \textit{k=21, C=100}. The performance of this model can be seen on Figure \ref{fig:results_gridcv_balanced_C_selKBest}.
+There are still many misclassified observations. The next step that we will look at is feature selection. We will utilize \textit{SelectKBest} with \textit{chi2} as selection method. The selection step is included in the grid search of the best set of parameters. We try with a range of \textit{k} features. The best model according to precision ends up being, \textit{k=21, C=100}. The performance of this model can be seen on Figure \ref{fig:results_gridcv_balanced_C_selKBest}.
 
 \begin{figure}[htbp!]
   \centering
@@ -58,20 +58,20 @@ There are still many misclassified observations. The next step that we will is f
 The model seems to identify less false positives while classifying more true positives. Hence, selecting 21 features seems to be positive for the model. Next we will try different kernels of the SVC model. It showed that the default kernel that was utilized already, Radial Basis Functions, is the best performer according to precision.  
 
 \subsection{Kaggle Submission}
-The final model is then used to predict labels on the unlabeled test data. The predictions are then submitted to kaggle and evaluated. The result was a score of $0.70666$. This score is low compared to others in the competition. The low score can have various causes, such as:
+The final model is then used to predict labels on the unlabelled test data. The predictions are then submitted to kaggle and evaluated. The result was a score of $0.70666$. This score is low compared to others in the competition. The low score can have various causes, such as:
 \begin{itemize}
   \item The model is not well tuned
   \item The model is overfitted on the training data
   \item The data is not preprocessed sufficient
   \item SVM is not the right classifier
 \end{itemize}
-During the tuning of the model a low range of values was used in the grid search of the optimal parameters. This was due to the necessity of being able to      train the model on a workstation in tolerable time. It would be optimal to try a larger range of values and thus more combinations. 
+During the tuning of the model a low range of values was used in the grid search of the optimal parameters. This was due to the necessity of being able to train the model on a workstation in tolerable time. It would be optimal to try a larger range of values and thus more combinations. 
 
-It is possible that the modes is being overfitted. Meaning the model are learning the wrong concepts from random fluctuations in the training data, that are not present in the test data. Tuning the regularization parameter of SVM and feature selection are both measures against overfitting. However, these might not be sufficient. 
+It is possible that the model is being overfitted. Meaning the model are learning the wrong concepts from random fluctuations in the training data, that are not present in the test data. Tuning the regularization parameter of SVM and feature selection are both measures against overfitting. However, these might not be sufficient. 
 
 The data might not be sufficiently preprocessed before being used by the model. Data cleaning was performed in terms of filling missing values, scaling was done by transforming the data in a specified range and feature selection was tried. Having additional processing power would allow to test other combinations of scaling and dimensionality reduction techniques. Additionally, it would be interesting to perform some outlier detection. It might be possible that there is some noisy data in the training data. This would also help to avoid overfitting.
 
-Lastly, it might be the case that SVM is not the right model for the problem. SVMs are in general versatile with the use of various kernels. However, as seen in the results of the paper it showed, that even with non linear kernels it was not able to create the right seperating hyperplane. 
+Lastly, it might be the case that SVM is not the right model for the problem. SVMs are in general versatile with the use of various kernels. However, as seen in the results of the paper it showed, that even with non linear kernels it was not able to create the right separating hyperplane. 
 
 
 
